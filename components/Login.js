@@ -98,7 +98,6 @@ class LoginTab extends Component {
     }
 
 }
-
 class RegisterTab extends Component {
     constructor(props) {
         super(props);
@@ -112,7 +111,6 @@ class RegisterTab extends Component {
             remember: false,
         }
     }
-
     getImageFromCamera = async () => {
         const cameraPermission = await Permissions.askAsync(Permissions.CAMERA)
         const cameraRollPermission = await Permissions.askAsync(Permissions.CAMERA_ROLL)
@@ -128,7 +126,6 @@ class RegisterTab extends Component {
             }
         }
     };
-
     getImageFromGallery = async () => {
         const cameraRoll = await Permissions.askAsync(Permissions.CAMERA_ROLL)
         if(cameraRoll.status === 'granted') {
@@ -142,7 +139,6 @@ class RegisterTab extends Component {
             }
         }    
     };
-
     handleRegister() {
         console.log(JSON.stringify(this.state));
         if(this.state.remember) {
@@ -181,7 +177,6 @@ class RegisterTab extends Component {
                 />
         )
     };
-
     render() {
         return(
             <ScrollView>
