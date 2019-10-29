@@ -20,7 +20,7 @@ class Reservation extends Component {
     static navigationOptions = {
         title: 'Reverse Table'
     }
-
+    /* toggleModal */
     toggleModal() {
         this.setState({ showModal: !this.state.showModal })
     }
@@ -186,6 +186,7 @@ class Reservation extends Component {
     }
 }
 
+/* StyleSheet */
 const styles = StyleSheet.create({
     formRow: {
         alignItems: 'center',
